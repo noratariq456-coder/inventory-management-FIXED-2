@@ -17,12 +17,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Database-backed authentication entry point for the Angular frontend.
- * POST /api/auth/login authenticates against MySQL (users/authorities tables via
- * CustomUserDetailsService) and returns the authenticated username and roles.
- * The session cookie issued here is then used for subsequent /api/** calls.
- */
 @RestController
 @RequestMapping("/api/auth")
 public class AuthRestController {
