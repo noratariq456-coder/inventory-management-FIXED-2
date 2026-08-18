@@ -62,3 +62,7 @@ public class AuthRestController {
         return new AuthResponse(authentication.getName(), roles);
     }
 }
+
+
+
+
