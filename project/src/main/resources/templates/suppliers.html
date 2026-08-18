@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Suppliers</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<h1>Suppliers</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+
+    <tr th:each="supplier : ${suppliers}">
+        <td th:text="${supplier.supplierId}"></td>
+        <td th:text="${supplier.name}"></td>
+        <td th:text="${supplier.contactEmail}"></td>
+        <td th:text="${supplier.phone}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
